@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoinKeep</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-jpg" />
+  </head>
+
+  <body>
+    <div class="content">
+      <h1 class="title">CoinKeep</h1>
+      <main>
+        <form id="input">
+          <label for="accounts" class="text item">Escolha uma conta:</label>
+          <select name="accounts" id="accounts" class="item field"></select>
+          <label for="value" class="text item mtop"
+            >Insira o valor da operação:</label
+          >
+          <div class="item writeField">
+            <input type="text" placeholder="Valor" id="valor" class="field" />
+          </div>
+          <label for="operations" class="text item"
+            >Selecione uma operação:</label
+          >
+          <select name="operations" id="operations" class="item field">
+            <option value="sacar">Sacar</option>
+            <option value="depositar">Depositar</option>
+          </select>
+          <div class="item writeField">
+            <button type="submit" class="field" id="confirm">Confirmar</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="bank.js" defer></script>
+  </body>
+</html>
