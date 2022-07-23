@@ -23,12 +23,17 @@ body{
     margin-top: 50px;
     color: cadetblue;
     font-family:cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px black;
 }
 main{
     width:100%;
     border: solid;
     border-color:darkslategrey;
     margin-top: 5%;
+    padding: 15px 0px;
+    border-radius: 5px;
 }
 form{
     display: flex;
@@ -36,7 +41,6 @@ form{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    padding: 500px -500px;
 }
 .text{
     font-family: Arial, Helvetica, sans-serif;
