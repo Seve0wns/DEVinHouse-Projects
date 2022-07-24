@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Calculadora</h1>
+      <main>
+        <div class="explanation">
+          <h3>Operações aceitas:</h3>
+          <ul>
+            <li>+ &#9: &#9soma</li>
+            <li>- &#9: &#9subtração</li>
+            <li>* &#9: &#9multiplicação</li>
+            <li>/ &#9: &#9divisão</li>
+            <li>^ &#9: &#9potenciação</li>
+            <li>( ) &#9: &#9parênteses</li>
+          </ul>
+        </div>
+        <div class="numberArea">
+          <label for="operation">Cálculo:</label>
+          <textarea
+            name="operation"
+            id="operation"
+            cols="30"
+            rows="1"
+            placeholder="(3*(4+(1*2)))*2+1"
+            class="equationArea"
+          ></textarea>
+          <label for="equation">Equação:</label>
+          <div name="equation" id="equation" class="equationArea">&nbsp;</div>
+          <div class="debug">
+            <label for="debug">Debug:</label>
+            <input type="checkbox" name="debug" id="debug" value="debug" />
+          </div>
+          <button type="button" id="submit" class="calcButton">=</button>
+        </div>
+      </main>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
