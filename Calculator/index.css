@@ -67,9 +67,7 @@ main{
     border: 2px solid;
     outline: 1px solid white;
     border-radius: 10px;
-    /* flex-wrap: wrap; */
     max-width: 100%;
-    /* inline-size: 258px; */
     inline-size: 92%;
     overflow-wrap: break-word;
 }
