@@ -14,7 +14,7 @@ class Operation {
         }
         this.left = parseInt(this.equation);
         if (this.left < 0) {
-            opi = this.setInfo(nextEq, priorityMod) + 1;
+            let opi = this.setInfo(nextEq, priorityMod) + 1;
             nextEq = this.equation.slice(opi + 1);
         }
         switch (this.operator) {
